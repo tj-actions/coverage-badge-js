@@ -40,7 +40,7 @@ jobs:
         run:  yarn test -- --coverage
         working-directory: test-app
 
-      - name: Run coverage-badge-js
+      - name: Run coverage badge js
         uses: ./
         with:
           path: test-app
