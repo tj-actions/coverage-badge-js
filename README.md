@@ -1,7 +1,7 @@
 coverage-badge-js
 -----------------
 
-Generate coverage badge using Istanbul's JSONON  summary
+Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) using Istanbul's JSON  summary reporter
 
 ```yaml
 ...
