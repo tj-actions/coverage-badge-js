@@ -25,7 +25,7 @@ Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) usi
 Features
 --------
 
-* TODO
+* Generate a coverage badge from a coverage report.
 
 
 Credits
