@@ -2,16 +2,22 @@ name: coverage badge js
 description: Generate coverage badge using Istanbul's JSONON  summary
 author: tj-actions
 inputs:
-  token:
-    description: 'GITHUB_TOKEN or a Repo scoped PAT'
+  path:
+    description: 'Path to the application'
     required: true
-    default: ${{ github.token }}
+    default: "."
+  output-path:
+    description: 'Writes the coverage badge to the given path'
+    required: true
+    default: "./coverage/badge.svg"
+  report-path:
+    description: 'Path to a coverage report file'
+    required: true
+    default: "./coverage/coverage-summary.json"
 
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.token }}
 branding:
   icon: list
   color: white
