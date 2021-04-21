@@ -9,7 +9,7 @@ Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) lik
 ...
     steps:
       - uses: actions/checkout@v2
-      - name: coverage badge js
+      - name: Generate coverage badge
         uses: tj-actions/coverage-badge-js@v1
 ```
 
