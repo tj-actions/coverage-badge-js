@@ -9,11 +9,11 @@ inputs:
   output_path:
     description: 'Writes the coverage badge to the given path'
     required: true
-    default: "./coverage/badge.svg"
+    default: "coverage/badge.svg"
   report_path:
     description: 'Path to a coverage report file'
     required: true
-    default: "./coverage/coverage-summary.json"
+    default: "coverage/coverage-summary.json"
 
 runs:
   using: 'docker'
