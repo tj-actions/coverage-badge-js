@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.2](https://github.com/tj-actions/coverage-badge-js/tree/v1.2) (2021-04-23)
+
+[Full Changelog](https://github.com/tj-actions/coverage-badge-js/compare/v1.1...v1.2)
+
+**Merged pull requests:**
+
+- Upgraded to v1.1 [\#9](https://github.com/tj-actions/coverage-badge-js/pull/9) ([jackton1](https://github.com/jackton1))
+
 ## [v1.1](https://github.com/tj-actions/coverage-badge-js/tree/v1.1) (2021-04-23)
 
 [Full Changelog](https://github.com/tj-actions/coverage-badge-js/compare/v1...v1.1)
