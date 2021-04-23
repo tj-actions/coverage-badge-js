@@ -1,5 +1,16 @@
 # Changelog
 
+## [v1.1](https://github.com/tj-actions/coverage-badge-js/tree/v1.1) (2021-04-23)
+
+[Full Changelog](https://github.com/tj-actions/coverage-badge-js/compare/v1...v1.1)
+
+**Merged pull requests:**
+
+- Update dependency @testing-library/jest-dom to v5.12.0 [\#8](https://github.com/tj-actions/coverage-badge-js/pull/8) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump @types/node from 12.20.10 to 14.14.41 in /test-app [\#7](https://github.com/tj-actions/coverage-badge-js/pull/7) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Update tj-actions/verify-changed-files action to v5.7 [\#6](https://github.com/tj-actions/coverage-badge-js/pull/6) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to [\#5](https://github.com/tj-actions/coverage-badge-js/pull/5) ([jackton1](https://github.com/jackton1))
+
 ## [v1](https://github.com/tj-actions/coverage-badge-js/tree/v1) (2021-04-21)
 
 [Full Changelog](https://github.com/tj-actions/coverage-badge-js/compare/8fbee177e53ccd82f491e583fdab3be79758a5d4...v1)
