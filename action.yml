@@ -1,5 +1,5 @@
 name: coverage badge js
-description: Generate coverage badge using Istanbul's JSONON  summary
+description: Generate coverage badge using Istanbul's JSON  summary
 author: tj-actions
 inputs:
   path:
