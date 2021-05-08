@@ -16,10 +16,11 @@ Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) lik
 
 ## Inputs
 
-|   Input       |    type    |  required     |  default                      |  description  |
-|:-------------:|:-----------:|:-------------:|:----------------------------:|:-------------:|
-| token         |  `string`   |    `true`    | `${{ github.token }}` | [GITHUB_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)              |
-
+|   Input       |    type    |  required      |  default                              |  description  |
+|:-------------:|:-----------:|:-------------:|:-------------------------------------:|:-------------:|
+| path          |  `string`    |    `true`    |          `.`                          | Path to the application                      |
+| output_path   |  `string`    |    `true`    |     `coverage/badge.svg`              | Writes the coverage badge to the given path  |
+| report_path   |  `string`    |    `true`    |     `coverage/coverage-summary.json`  | Path to a coverage report file               |
 
 
 * Free software: [MIT license](LICENSE)
