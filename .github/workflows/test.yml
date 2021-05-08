@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: shellcheck
         uses: reviewdog/action-shellcheck@v1.5
@@ -37,7 +39,7 @@ jobs:
         working-directory: test-app
 
       - name: Run test
-        run:  yarn test -- --coverage
+        run:  yarn test --coverage
         working-directory: test-app
 
       - name: Run coverage badge js
