@@ -23,6 +23,36 @@ Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) lik
 | report_path   |  `string`    |    `true`    |     `coverage/coverage-summary.json`  | Path to a coverage report file               |
 
 
+## Example
+
+```yaml
+...
+      - name: Generate coverage badge
+        uses: tj-actions/coverage-badge-js@v1.3
+        with:
+          path: test-app
+
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v6
+        id: verify_changed_files
+        with:
+          files: |
+            coverage/badge.svg
+
+      - name: Create Pull Request
+        if: steps.verify_changed_files.outputs.files_changed == 'true'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          base: "main"
+          title: "Updated coverage badge"
+          branch: "chore/update-coverage-badge"
+          commit-message: "Updated coverage badge."
+          body: "Updated coverage badge."
+          token: ${{ github.token }}
+
+```
+
+
 * Free software: [MIT license](LICENSE)
 
 Features
