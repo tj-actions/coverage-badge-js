@@ -25,6 +25,8 @@ Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) lik
 
 ## Example
 
+Generate a coverage badge after running your test and create a Pull request with those changes.
+
 ```yaml
 ...
       - name: Generate coverage badge
