@@ -44,6 +44,11 @@ jobs:
         uses: ./
         with:
           path: test-app
+      
+      - run: |
+          git status
+          echo "----"
+          ls test-app
 
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v6.1
