@@ -50,12 +50,12 @@ jobs:
         id: verify_changed_files
         with:
           files: |
-            coverage/badge.svg
+            test-app/coverage/badge.svg
       
       - name: Coverage badge has changed
         if: steps.verify_changed_files.outputs.files_changed == 'true'
         run: |
-          echo "coverage/badge.svg has uncommited changes"
+          echo "test-app/coverage/badge.svg has uncommited changes"
           exit 1
 
       - name: Create Pull Request
