@@ -48,6 +48,10 @@ jobs:
       - run: |
           git status
           echo "----"
+          git diff --diff-filter="*ACDMRTUX" --name-only
+          echo "----"
+          git diff --diff-filter=ACMUXTR --name-only
+          echo "----"
           ls test-app/coverage
 
       - name: Verify Changed files
