@@ -47,22 +47,24 @@ jobs:
 
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v6
-        id: changed_files
+        id: verify_changed_files
         with:
           files: |
             coverage/badge.svg
-
-      - name: Commit files
-        if: steps.changed_files.outputs.files_changed == 'true'
+      
+      - name: Coverage badge has changed
+        if: steps.verify_changed_files.outputs.files_changed == 'true'
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add coverage/badge.svg
-          git commit -m "Updated coverage badge."
+          echo "coverage/badge.svg has uncommited changes"
+          exit 1
 
-      - name: Push changes
-        if: steps.changed_files.outputs.files_changed == 'true'
-        uses: ad-m/github-push-action@master
+      - name: Create Pull Request
+        if: failure()
+        uses: peter-evans/create-pull-request@v3
         with:
-          github_token: ${{ secrets.github_token }}
-          branch: ${{ github.ref }}
+          base: "main"
+          title: "Updated coverage badge"
+          branch: "chore/update-coverage-badge"
+          commit-message: "Updated coverage badge."
+          body: "Updated coverage badge."
+          token: ${{ github.token }}
