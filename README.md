@@ -35,14 +35,14 @@ Generate a coverage badge after running your test and create a Pull request with
           path: test-app
 
       - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v6
-        id: verify_changed_files
+        uses: tj-actions/verify-changed-files@v6.1
+        id: verify-changed-files
         with:
           files: |
-            coverage/badge.svg
+             test-app/coverage/badge.svg
 
       - name: Create Pull Request
-        if: steps.verify_changed_files.outputs.files_changed == 'true'
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
         uses: peter-evans/create-pull-request@v3
         with:
           base: "main"
