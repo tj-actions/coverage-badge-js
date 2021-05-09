@@ -67,4 +67,4 @@ jobs:
           branch: "chore/update-coverage-badge"
           commit-message: "Updated coverage badge."
           body: "Updated coverage badge."
-          token: ${{ github.token }}
+          token: ${{ secrets.PAT_TOKEN }}
