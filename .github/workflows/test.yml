@@ -47,6 +47,9 @@ jobs:
         with:
           path: test-app
       
+      - run: |
+          git ls-files . --ignored --exclude-standard --others
+      
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v5.3
