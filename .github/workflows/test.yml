@@ -48,7 +48,7 @@ jobs:
           path: test-app
       
       - run: |
-          git ls-files . --ignored --exclude-standard --others
+          git ls-files . --exclude-standard --others
       
       - name: Get changed files
         id: changed-files
