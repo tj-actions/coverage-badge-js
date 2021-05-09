@@ -50,12 +50,9 @@ jobs:
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v5.2
-        with:
-          files: |
-            test-app/coverage/badge.svg
 
       - name: Coverage badge has changed
-        if: steps.changed-files.outputs.all_changed == 'true'
+        if: contains(steps.changed-files.outputs.modified_files, 'test-app/coverage/badge.svg')
         run: |
           echo "test-app/coverage/badge.svg has uncommited changes"
           exit 1
