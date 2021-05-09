@@ -37,23 +37,23 @@ jobs:
         working-directory: test-app
 
       - name: Run test
-        run:  yarn test -- --coverage
+        run:  yarn test --coverage
         working-directory: test-app
 
       - name: Run coverage badge js
         uses: ./
         with:
           path: test-app
-      
-      - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v5.3
+  
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v6.1
+        id: verify-changed-files
         with:
           files: |
-            test-app/coverage/badge.svg
+             test-app/coverage/badge.svg
 
       - name: Coverage badge has changed
-        if: steps.changed-files.outputs.all_changed == 'true'
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
         run: |
           echo "test-app/coverage/badge.svg has uncommited changes"
           exit 1
