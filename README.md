@@ -1,7 +1,6 @@
-[![CI](https://github.com/tj-actions/coverage-badge-js/actions/workflows/test.yml/badge.svg)](https://github.com/tj-actions/coverage-badge-js/actions/workflows/test.yml) [![Update release version.](https://github.com/tj-actions/coverage-badge-js/actions/workflows/sync-release-version.yml/badge.svg)](https://github.com/tj-actions/coverage-badge-js/actions/workflows/sync-release-version.yml) [![Public workflows that use this action.](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-tj-actions1.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dtj-actions%2Fcoverage-badge-js%26badge%3Dtrue)](https://github.com/search?o=desc&q=tj-actions+coverage-badge-js+path%3A.github%2Fworkflows+language%3AYAML&s=&type=Code)
+[![CI](https://github.com/tj-actions/coverage-badge-js/actions/workflows/test.yml/badge.svg)](https://github.com/tj-actions/coverage-badge-js/actions/workflows/test.yml) [![Update release version.](https://github.com/tj-actions/coverage-badge-js/actions/workflows/sync-release-version.yml/badge.svg)](https://github.com/tj-actions/coverage-badge-js/actions/workflows/sync-release-version.yml) [![Public workflows that use this action.](https://img.shields.io/endpoint?url=https%3A%2F%2Fapi-tj-actions1.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dtj-actions%2Fcoverage-badge-js%26badge%3Dtrue)](https://github.com/search?o=desc\&q=tj-actions+coverage-badge-js+path%3A.github%2Fworkflows+language%3AYAML\&s=\&type=Code)
 
-coverage-badge-js
------------------
+## coverage-badge-js
 
 Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) like this ![coverage badge](./test-app/coverage/badge.svg) using [Istanbul's JSON summary reporter](https://github.com/istanbuljs/nyc) without uploading results to a 3rd party site.
 
@@ -13,7 +12,6 @@ Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) lik
         uses: tj-actions/coverage-badge-js@v1.3
 ```
 
-
 ## Inputs
 
 |   Input       |    type    |  required      |  default                              |  description  |
@@ -21,7 +19,6 @@ Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) lik
 | path          |  `string`    |    `true`    |          `.`                          | Path to the application                      |
 | output_path   |  `string`    |    `true`    |     `coverage/badge.svg`              | Writes the coverage badge to the given path  |
 | report_path   |  `string`    |    `true`    |     `coverage/coverage-summary.json`  | Path to a coverage report file               |
-
 
 ## Example
 
@@ -54,37 +51,30 @@ Generate a coverage badge after running your test and create a Pull request with
 
 ```
 
-
-* Free software: [MIT license](LICENSE)
+*   Free software: [MIT license](LICENSE)
 
 If you feel generous and want to show some extra appreciation:
 
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
 [buymeacoffee]: https://www.buymeacoffee.com/jackton1
+
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
 
+## Features
 
-Features
---------
+*   Generate a coverage badge from a coverage report.
 
-* Generate a coverage badge from a coverage report.
-
-
-Credits
--------
+## Credits
 
 This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter).
 
-
-
-Report Bugs
------------
+## Report Bugs
 
 Report bugs at https://github.com/tj-actions/coverage-badge-js/issues.
 
 If you are reporting a bug, please include:
 
-* Your operating system name and version.
-* Any details about your workflow that might be helpful in troubleshooting.
-* Detailed steps to reproduce the bug.
+*   Your operating system name and version.
+*   Any details about your workflow that might be helpful in troubleshooting.
+*   Detailed steps to reproduce the bug.
