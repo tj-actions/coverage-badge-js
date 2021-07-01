@@ -4,6 +4,10 @@
 
 Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) like this ![coverage badge](./test-app/coverage/badge.svg) using [Istanbul's JSON summary reporter](https://github.com/istanbuljs/nyc) without uploading results to a 3rd party site.
 
+# Usage
+
+- Configure [Istanbul's JSON summary reporter](https://github.com/tlvince/make-coverage-badge#usage)
+
 ```yaml
 ...
     steps:
