@@ -6,7 +6,7 @@ Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) lik
 
 # Usage
 
-- Configure [Istanbul's JSON summary reporter](https://github.com/tlvince/make-coverage-badge#usage)
+*   Configure [Istanbul's JSON summary reporter](https://github.com/tlvince/make-coverage-badge#usage)
 
 ```yaml
 ...
