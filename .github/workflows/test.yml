@@ -16,7 +16,7 @@ jobs:
       - name: shellcheck
         uses: reviewdog/action-shellcheck@v1.15
 
-      - uses: actions/setup-node@v3.4.0
+      - uses: actions/setup-node@v3.4.1
         with:
           node-version: 14
 
