@@ -31,12 +31,6 @@ Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) lik
 
 <!-- AUTO-DOC-INPUT:END -->
 
-|   Input       |    type    |  required      |  default                              |  description  |
-|:-------------:|:-----------:|:-------------:|:-------------------------------------:|:-------------:|
-| path          |  `string`    |    `true`    |          `.`                          | Path to the application                      |
-| output\_path   |  `string`    |    `true`    |     `coverage/badge.svg`              | Writes the coverage badge to the given path  |
-| report\_path   |  `string`    |    `true`    |     `coverage/coverage-summary.json`  | Path to a coverage report file               |
-
 ## Example
 
 Generate a coverage badge after running your test and create a Pull request with those changes.
