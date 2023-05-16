@@ -48,7 +48,7 @@
     ]
   },
   "devDependencies": {
-    "stylelint": "15.6.1",
+    "stylelint": "15.6.2",
     "stylelint-config-standard": "33.0.0"
   }
 }
