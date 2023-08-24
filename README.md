@@ -23,11 +23,11 @@ Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) lik
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|    INPUT    |  TYPE  | REQUIRED |              DEFAULT               |                   DESCRIPTION                    |
-|-------------|--------|----------|------------------------------------|--------------------------------------------------|
-| output\_path | string |   true   |       `"coverage/badge.svg"`       | Writes the coverage badge to <br>the given path  |
-|    path     | string |   true   |               `"."`                |             Path to the application              |
-| report\_path | string |   true   | `"coverage/coverage-summary.json"` |       Path to a coverage report <br>file         |
+|                               INPUT                               |  TYPE  | REQUIRED |              DEFAULT               |                   DESCRIPTION                    |
+|-------------------------------------------------------------------|--------|----------|------------------------------------|--------------------------------------------------|
+| <a name="input_output_path"></a>[output\_path](#input_output_path) | string |   true   |       `"coverage/badge.svg"`       | Writes the coverage badge to <br>the given path  |
+|           <a name="input_path"></a>[path](#input_path)            | string |   true   |               `"."`                |             Path to the application              |
+| <a name="input_report_path"></a>[report\_path](#input_report_path) | string |   true   | `"coverage/coverage-summary.json"` |       Path to a coverage report <br>file         |
 
 <!-- AUTO-DOC-INPUT:END -->
 
