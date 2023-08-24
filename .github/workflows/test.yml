@@ -11,7 +11,7 @@ jobs:
   coverage-badge:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v3.6.0
 
       - name: shellcheck
         uses: reviewdog/action-shellcheck@v1.18
