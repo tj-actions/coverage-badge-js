@@ -1,5 +1,5 @@
 name: coverage badge js
-description: Generate coverage badge using Istanbul's JSON  summary
+description: "Generate coverage badge using Istanbul's JSON  summary"
 author: tj-actions
 inputs:
   path:
@@ -16,8 +16,20 @@ inputs:
     default: "coverage/coverage-summary.json"
 
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: 'composite'
+  steps:
+    - name: Generate coverage badge
+      run: |
+        bash $GITHUB_ACTION_PATH/entrypoint.sh
+      id: coverage-badge-js
+      shell: bash
+      env:
+        # INPUT_<VARIABLE_NAME> is not available in Composite run steps
+        # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
+        INPUT_PATH: ${{ inputs.path }}
+        INPUT_OUTPUT_PATH: ${{ inputs.output_path }}
+        INPUT_REPORT_PATH: ${{ inputs.report_path }}
+
 branding:
   icon: check-circle
   color: white
