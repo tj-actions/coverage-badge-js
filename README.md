@@ -14,7 +14,7 @@ Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) lik
 ```yaml
 ...
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Generate coverage badge
         uses: tj-actions/coverage-badge-js@v1.3
 ```
