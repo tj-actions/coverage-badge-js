@@ -4,7 +4,9 @@
 [![Public workflows that use this action.](https://img.shields.io/endpoint?url=https%3A%2F%2Fused-by.vercel.app%2Fapi%2Fgithub-actions%2Fused-by%3Faction%3Dtj-actions%2Fcoverage-badge-js%26badge%3Dtrue)](https://github.com/search?o=desc\&q=tj-actions+coverage-badge-js+path%3A.github%2Fworkflows+language%3AYAML\&s=\&type=Code)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## coverage-badge-js
@@ -99,8 +101,11 @@ If you are reporting a bug, please include:
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
 <!-- prettier-ignore-start -->
+
 <!-- markdownlint-disable -->
+
 <table>
   <tbody>
     <tr>
@@ -110,6 +115,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 <!-- markdownlint-restore -->
+
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
