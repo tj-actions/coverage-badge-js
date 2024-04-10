@@ -22,7 +22,7 @@ Generate [coverage badge](https://www.npmjs.com/package/make-coverage-badge) lik
     steps:
       - uses: actions/checkout@v4
       - name: Generate coverage badge
-        uses: tj-actions/coverage-badge-js@v1.3
+        uses: tj-actions/coverage-badge-js@v2
 ```
 
 ## Inputs
@@ -44,7 +44,7 @@ Generate a coverage badge after running your test and create a Pull request with
 ```yaml
 ...
       - name: Generate coverage badge
-        uses: tj-actions/coverage-badge-js@v1.3
+        uses: tj-actions/coverage-badge-js@v2
         with:
           path: test-app
 
